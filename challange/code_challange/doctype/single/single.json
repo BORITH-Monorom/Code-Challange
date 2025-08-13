@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-12 17:50:30.676449",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "label_1",
+  "label_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "label_1",
+   "fieldtype": "Data",
+   "label": "label 1"
+  },
+  {
+   "fieldname": "label_2",
+   "fieldtype": "Text",
+   "label": "label 2"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-08-12 17:51:30.278947",
+ "modified_by": "Administrator",
+ "module": "Code Challange",
+ "name": "single",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

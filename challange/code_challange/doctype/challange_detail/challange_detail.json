@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: demo-{DD}-{MM}-{YY}-{###}",
+ "creation": "2025-08-12 17:00:28.016984",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "label_1",
+  "label_2",
+  "amended_from",
+  "table_dpca"
+ ],
+ "fields": [
+  {
+   "fieldname": "label_1",
+   "fieldtype": "Data",
+   "label": "label 1"
+  },
+  {
+   "fieldname": "label_2",
+   "fieldtype": "Data",
+   "label": "label 2"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "demo",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "table_dpca",
+   "fieldtype": "Table",
+   "options": "type"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-12 17:36:38.108669",
+ "modified_by": "Administrator",
+ "module": "Code Challange",
+ "name": "Challange Detail",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
