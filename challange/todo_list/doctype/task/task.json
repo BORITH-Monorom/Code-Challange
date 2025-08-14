@@ -9,10 +9,12 @@
   "title",
   "description",
   "status",
+  "column_break_xyah",
   "due_date",
   "is_completed",
   "priority",
-  "order_by"
+  "order_by",
+  "completed_status"
  ],
  "fields": [
   {
@@ -23,6 +25,7 @@
   {
    "fieldname": "title",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Title",
    "unique": 1
   },
@@ -30,6 +33,8 @@
    "default": "To Do",
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "To Do\nIn progress\nDone"
   },
@@ -39,7 +44,7 @@
    "label": "Due Date"
   },
   {
-   "default": "0",
+   "default": "false",
    "fieldname": "is_completed",
    "fieldtype": "Check",
    "label": "is Completed"
@@ -55,12 +60,21 @@
    "fieldname": "order_by",
    "fieldtype": "Int",
    "label": "order_by"
+  },
+  {
+   "fieldname": "column_break_xyah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "completed_status",
+   "fieldtype": "Int",
+   "label": "Completed Status"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-13 20:27:43.364396",
+ "modified": "2025-08-14 19:47:50.534097",
  "modified_by": "Administrator",
  "module": "Todo List",
  "name": "task",

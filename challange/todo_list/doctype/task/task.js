@@ -1,6 +1,7 @@
 // Copyright (c) 2025, Monorom and contributors
 // For license information, please see license.txt
 
+
 frappe.ui.form.on("task", {
         is_completed: function(frm){
             if(frm.doc.is_completed){
