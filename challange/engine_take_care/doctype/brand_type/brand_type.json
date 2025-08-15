@@ -1,12 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:brand_name",
  "creation": "2025-08-15 10:36:29.519956",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "brand_name",
-  "type"
+  "brand_name"
  ],
  "fields": [
   {
@@ -17,20 +17,12 @@
    "label": "Brand Name",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "type",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Type",
-   "options": "Vehicle Type"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-15 15:46:24.347390",
+ "modified": "2025-08-15 20:48:04.928398",
  "modified_by": "Administrator",
  "module": "Engine Take Care",
  "name": "Brand Type",

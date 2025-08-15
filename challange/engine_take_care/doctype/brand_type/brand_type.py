@@ -6,8 +6,8 @@ from frappe.model.document import Document
 from frappe.model.naming import make_autoname
 
 class BrandType(Document):
-	def autoname(self):
-		brand = self.brand_name.strip().replace(" ", "-")
-		self.name = make_autoname(f"VB-.###.-{brand}")
+	# def autoname(self):
+	# 	brand = self.brand_name.strip().replace(" ", "-")
+	# 	self.name = make_autoname(f"VB-.###.-{brand}")
 
 	pass
