@@ -1,0 +1,91 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"VxiBEwTCMj\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Your Shortcut</b></span>\",\"col\":12}},{\"id\":\"lMV93YcjIQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle Registration\",\"col\":3}},{\"id\":\"gHZ63bonUe\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"0cs5ueF3k2\",\"type\":\"paragraph\",\"data\":{\"text\":\"Quick Start\",\"col\":12}},{\"id\":\"0i5bo7_Je7\",\"type\":\"card\",\"data\":{\"card_name\":\"Projects\",\"col\":4}},{\"id\":\"p-YTbSIDZK\",\"type\":\"card\",\"data\":{\"card_name\":\"Tracking\",\"col\":4}}]",
+ "creation": "2025-10-27 20:26:21.953427",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "education",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "My Projects",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "test",
+   "link_count": 0,
+   "link_to": "Vehicles",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tracking",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Activity Log",
+   "link_count": 0,
+   "link_to": "Vehicle Activity Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Projects",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Management System",
+   "link_count": 0,
+   "link_to": "Vehicles",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-11-03 13:25:44.194085",
+ "modified_by": "Administrator",
+ "module": "Engine Take Care",
+ "name": "My Projects",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Vehicle Registration",
+   "link_to": "Vehicles",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "My Projects"
+}

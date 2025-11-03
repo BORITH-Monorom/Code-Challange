@@ -1,0 +1,245 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2025-08-15 16:28:50.417902",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "make",
+  "vehicle_type",
+  "column_break_dtza",
+  "model_year",
+  "engine_detail_section",
+  "engine_size",
+  "fuel_system",
+  "ignition_system",
+  "column_break_bkyg",
+  "starter_system",
+  "final_drive_type",
+  "compression_ratio",
+  "dimensions_details_section",
+  "w_x_l_x_h",
+  "weight",
+  "seat_high",
+  "column_break_yrxu",
+  "wheelbase",
+  "fuel_tank",
+  "ground_clearance",
+  "suspension_and_tire_section",
+  "tire_size_front",
+  "tire_size_rear",
+  "suspension_front",
+  "suspension_rear",
+  "column_break_ecyy",
+  "front_brake",
+  "rear_brake",
+  "tire_type",
+  "additional_details_section",
+  "fuel_uom",
+  "fuel_type",
+  "column_break_kakd"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Link",
+   "label": "Vehicle Type",
+   "options": "Vehicle Types"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Link",
+   "label": "Make",
+   "options": "Make"
+  },
+  {
+   "fieldname": "engine_size",
+   "fieldtype": "Link",
+   "label": "Engine Size",
+   "options": "Engine Size"
+  },
+  {
+   "fieldname": "model_year",
+   "fieldtype": "Data",
+   "label": "Model Year"
+  },
+  {
+   "fieldname": "additional_details_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Details"
+  },
+  {
+   "fieldname": "fuel_uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Fuel UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kakd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "Petrol\nDiesel"
+  },
+  {
+   "fieldname": "column_break_dtza",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "engine_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Engine Detail"
+  },
+  {
+   "fieldname": "fuel_system",
+   "fieldtype": "Select",
+   "label": "Fuel System",
+   "options": "Carburetor\nFuel Injection( PGM-Fi)"
+  },
+  {
+   "fieldname": "ignition_system",
+   "fieldtype": "Select",
+   "label": "Ignition System",
+   "options": "Full Transisterized"
+  },
+  {
+   "fieldname": "column_break_bkyg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "starter_system",
+   "fieldtype": "Select",
+   "label": "Starter System",
+   "options": "Self & Kick\nElectric Starter"
+  },
+  {
+   "fieldname": "final_drive_type",
+   "fieldtype": "Select",
+   "label": "Final Drive Type",
+   "options": "Chain\nBelt Drive"
+  },
+  {
+   "fieldname": "compression_ratio",
+   "fieldtype": "Select",
+   "label": "Compression Ratio",
+   "options": "9.0:1\n10.0 : 1"
+  },
+  {
+   "fieldname": "dimensions_details_section",
+   "fieldtype": "Section Break",
+   "label": "Dimensions Details"
+  },
+  {
+   "fieldname": "w_x_l_x_h",
+   "fieldtype": "Data",
+   "label": "W x L x H"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "seat_high",
+   "fieldtype": "Data",
+   "label": "Seat High"
+  },
+  {
+   "fieldname": "column_break_yrxu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wheelbase",
+   "fieldtype": "Data",
+   "label": "Wheelbase"
+  },
+  {
+   "fieldname": "fuel_tank",
+   "fieldtype": "Float",
+   "label": "Fuel Tank",
+   "precision": "1"
+  },
+  {
+   "fieldname": "ground_clearance",
+   "fieldtype": "Data",
+   "label": "Ground Clearance"
+  },
+  {
+   "fieldname": "suspension_and_tire_section",
+   "fieldtype": "Section Break",
+   "label": "Suspension and Tire"
+  },
+  {
+   "fieldname": "tire_size_front",
+   "fieldtype": "Data",
+   "label": "Tire Size Front"
+  },
+  {
+   "fieldname": "tire_size_rear",
+   "fieldtype": "Data",
+   "label": "Tire Size Rear"
+  },
+  {
+   "fieldname": "suspension_front",
+   "fieldtype": "Data",
+   "label": "Suspension Front"
+  },
+  {
+   "fieldname": "suspension_rear",
+   "fieldtype": "Data",
+   "label": "Suspension Rear"
+  },
+  {
+   "fieldname": "column_break_ecyy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "front_brake",
+   "fieldtype": "Data",
+   "label": "Front brake"
+  },
+  {
+   "fieldname": "rear_brake",
+   "fieldtype": "Data",
+   "label": "Rear brake"
+  },
+  {
+   "fieldname": "tire_type",
+   "fieldtype": "Data",
+   "label": "Tire Type"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-30 14:45:54.373457",
+ "modified_by": "Administrator",
+ "module": "Engine Take Care",
+ "name": "Model Variants",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

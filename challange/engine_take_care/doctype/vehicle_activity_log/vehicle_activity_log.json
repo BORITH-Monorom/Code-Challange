@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-08-27 09:55:52.372262",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "license_plate",
+  "naming_series",
+  "column_break_xsdo",
+  "model_variant",
+  "employee",
+  "odometer_reading_section",
+  "date",
+  "odometer",
+  "column_break_adjl",
+  "last_odometer_value",
+  "refuelling_details_section",
+  "fuel_qty",
+  "fuel_price",
+  "column_break_glkd",
+  "supplier",
+  "service_details_section",
+  "vehicles_service",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "odometer",
+   "fieldtype": "Int",
+   "label": "Current Odometer value"
+  },
+  {
+   "fieldname": "odometer_reading_section",
+   "fieldtype": "Section Break",
+   "label": "Odometer Reading"
+  },
+  {
+   "fieldname": "service_details_section",
+   "fieldtype": "Section Break",
+   "label": "Service Details"
+  },
+  {
+   "fetch_from": "license_plate.employee",
+   "fetch_if_empty": 1,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "license_plate",
+   "fieldtype": "Link",
+   "label": "License Plate",
+   "options": "Vehicles"
+  },
+  {
+   "fieldname": "column_break_xsdo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "license_plate.model_variants",
+   "fieldname": "model_variant",
+   "fieldtype": "Read Only",
+   "label": "Model Variant"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_adjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "license_plate.last_odometer",
+   "fieldname": "last_odometer_value",
+   "fieldtype": "Read Only",
+   "label": "Last Odometer Value"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Activity Log",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "VLOG-.YYYY.-"
+  },
+  {
+   "fieldname": "refuelling_details_section",
+   "fieldtype": "Section Break",
+   "label": "Refuelling Details"
+  },
+  {
+   "fieldname": "fuel_qty",
+   "fieldtype": "Float",
+   "label": "Fuel Qty"
+  },
+  {
+   "fieldname": "fuel_price",
+   "fieldtype": "Currency",
+   "label": "Fuel Price"
+  },
+  {
+   "fieldname": "column_break_glkd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "vehicles_service",
+   "fieldtype": "Table",
+   "label": "Vehicles Service",
+   "options": "Vehicles Service"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-03 16:56:02.782582",
+ "modified_by": "Administrator",
+ "module": "Engine Take Care",
+ "name": "Vehicle Activity Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

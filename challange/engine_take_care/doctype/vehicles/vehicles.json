@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:license_plate",
+ "creation": "2025-08-15 09:31:49.322533",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personality_section",
+  "license_plate",
+  "column_break_iiil",
+  "model_variants",
+  "details_section",
+  "employee",
+  "vehicle_value",
+  "last_odometer",
+  "column_break_wnho",
+  "location",
+  "acquisition_date",
+  "vehicle_information_section",
+  "color"
+ ],
+ "fields": [
+  {
+   "fieldname": "location",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location",
+   "options": "Banteay Meanchey\nBattambang\nKampong Cham\nKampong Chhnang\nKampong Speu\nKampong Thom\nKampot\nKandal\nKep\nKoh Kong\nKrati\u00e9\nMondulkiri\nOddar Meanchey\nPailin\nPhnom Penh\nPreah Sihanouk\nPreah Vihear\nPrey Veng\nPursat\nRatanakiri\nSiem Reap\nStung Treng\nSvay Rieng\nTak\u00e9o\nTboung Khmum"
+  },
+  {
+   "fieldname": "personality_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_iiil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle_information_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Select",
+   "label": "Color",
+   "options": "Black\nWhite\nBlue\nPurple"
+  },
+  {
+   "fieldname": "model_variants",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Model Variants",
+   "options": "Model Variants"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "license_plate",
+   "fieldtype": "Data",
+   "label": "License Plate",
+   "unique": 1
+  },
+  {
+   "fieldname": "vehicle_value",
+   "fieldtype": "Currency",
+   "label": "Vehicle Value"
+  },
+  {
+   "fieldname": "column_break_wnho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "acquisition_date",
+   "fieldtype": "Date",
+   "label": "Acquisition Date"
+  },
+  {
+   "fieldname": "last_odometer",
+   "fieldtype": "Int",
+   "label": "Odometer Value (Last)",
+   "no_copy": 1,
+   "set_only_once": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-31 10:57:30.533518",
+ "modified_by": "Administrator",
+ "module": "Engine Take Care",
+ "name": "Vehicles",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "model_variants,employee",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
